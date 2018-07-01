@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/gradfinal"
+    tools:context="com.example.android.quizapp.check">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/gifheight"
+            android:layout_marginTop="@dimen/gifmargin"
+            android:src="@drawable/gif" />
+
+        <TextView
+            android:id="@+id/res"
+            android:layout_margin="@dimen/margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="@dimen/textsize"/>
+
+        <TextView
+            android:id="@+id/rem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:textSize="@dimen/texsize"
+            android:textColor="@color/pinish"/>
+
+        <TextView
+            android:autoLink="web"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:text="@string/link"
+            android:textColorLink="@color/whitish"/>
+
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/sha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/share"
+            android:background="@drawable/rnd"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/gifmargin"
+            android:onClick="lend"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quit"
+            android:background="@drawable/rnd"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/gifmargin"
+            android:onClick="fin"/>
+
+    </RelativeLayout>
+</ScrollView>

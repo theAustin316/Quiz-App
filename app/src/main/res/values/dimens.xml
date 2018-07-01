@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="btnidth">2dp</dimen>
+    <dimen name="corneradius">150dp</dimen>
+    <dimen name="gifheight">250dp</dimen>
+    <dimen name="gifmargin">35dp</dimen>
+    <dimen name="textsize">24sp</dimen>
+    <dimen name="texsize">18sp</dimen>
+    <dimen name="margin">15dp</dimen>
+    <dimen name="btnwidth">0dp</dimen>
+    <dimen name="title_mgtop">320dp</dimen>
+    <dimen name="title_mg">18dp</dimen>
+    <dimen name="title_textsize">45sp</dimen>
+    <dimen name="instruct_mgleft">60dp</dimen>
+    <dimen name="begin_mgtop">30dp</dimen>
+    <dimen name="ans_size">14sp</dimen>
+    <dimen name="ans_mgTop">160dp</dimen>
+    <dimen name="ans_mgleft">8dp</dimen>
+    <dimen name="quest_mgleft">12dp</dimen>
+    <dimen name="img_height">256dp</dimen>
+    <dimen name="opt_padding">16dp</dimen>
+    <dimen name="land_mgTop">365dp</dimen>
+    <dimen name="check_lanmgtop">390dp</dimen>
+    <dimen name="pop_margin">25dp</dimen>
+</resources>

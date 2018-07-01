@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad9"
+    android:fillViewport="true"
+    tools:context="com.example.android.quizapp.ques9">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/ans9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ans_mgleft"
+            android:layout_marginRight="@dimen/ans_mgleft"
+            android:layout_marginTop="@dimen/corneradius"
+            android:text="@string/c9"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ans_size"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/quest_mgleft"
+                android:layout_marginRight="@dimen/quest_mgleft"
+                android:layout_marginTop="@dimen/quest_mgleft"
+                android:text="@string/q9"
+                android:textSize="@dimen/textsize" />
+
+            <ImageView
+                android:id="@+id/img9"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/img_height"
+                android:src="@drawable/q9"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/add_ans9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/quest_mgleft"
+                android:layout_marginRight="@dimen/quest_mgleft"
+                android:gravity="center"
+                android:hint="@string/hint"
+                android:inputType="textCapCharacters"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/show9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="@dimen/margin"
+            android:background="@drawable/rnd"
+            android:onClick="ans9"
+            android:text="@string/show_answer" />
+
+        <Button
+            android:id="@+id/sub9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin"
+            android:layout_marginLeft="@dimen/gifmargin"
+            android:layout_toRightOf="@id/show9"
+            android:background="@color/pink"
+            android:onClick="answer9"
+            android:text="@string/submit"
+            android:textColor="@color/violet" />
+
+        <Button
+            android:id="@+id/q10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/margin"
+            android:background="@drawable/rnd"
+            android:onClick="page10"
+            android:text="@string/next" />
+
+        <ImageView
+            android:id="@+id/appreciate"
+            android:layout_width="@dimen/corneradius"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/q10"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/quest_mgleft"
+            android:src="@drawable/claps1"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/negate"
+            android:layout_width="@dimen/corneradius"
+            android:layout_height="@dimen/corneradius"
+            android:layout_above="@id/q10"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/quest_mgleft"
+            android:src="@drawable/wrong"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+</ScrollView>

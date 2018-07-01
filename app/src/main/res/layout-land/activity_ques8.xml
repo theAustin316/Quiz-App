@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/grad8"
+    android:fillViewport="true"
+    tools:context="com.example.android.quizapp.ques8">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/ans8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/instruct_mgleft"
+            android:layout_marginRight="@dimen/instruct_mgleft"
+            android:layout_marginTop="@dimen/corneradius"
+            android:text="@string/c8"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ans_size"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/quest_mgleft"
+                android:layout_marginRight="@dimen/quest_mgleft"
+                android:layout_marginTop="@dimen/quest_mgleft"
+                android:text="@string/q8"
+                android:textSize="@dimen/textsize" />
+
+            <ImageView
+                android:id="@+id/img8"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/img_height"
+                android:layout_marginBottom="@dimen/ans_mgleft"
+                android:layout_marginTop="@dimen/quest_mgleft"
+                android:src="@drawable/q8"
+                android:visibility="visible" />
+
+            <CheckBox
+                android:id="@+id/op1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/quest_mgleft"
+                android:paddingLeft="@dimen/opt_padding"
+                android:text="@string/q8op1" />
+
+            <CheckBox
+                android:id="@+id/op2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/quest_mgleft"
+                android:paddingLeft="@dimen/opt_padding"
+                android:text="@string/q8op2" />
+
+            <CheckBox
+                android:id="@+id/op3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/quest_mgleft"
+                android:paddingLeft="@dimen/opt_padding"
+                android:text="@string/q8op3" />
+
+            <CheckBox
+                android:id="@+id/op4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/quest_mgleft"
+                android:paddingLeft="@dimen/opt_padding"
+                android:text="@string/q8op4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/show8"
+                    android:layout_width="@dimen/btnwidth"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/quest_mgleft"
+                    android:layout_marginLeft="@dimen/quest_mgleft"
+                    android:layout_marginTop="@dimen/instruct_mgleft"
+                    android:layout_weight="1"
+                    android:background="@drawable/rnd"
+                    android:onClick="ans8"
+                    android:text="@string/show_answer" />
+
+                <Button
+                    android:id="@+id/sub8"
+                    android:layout_width="@dimen/btnwidth"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/quest_mgleft"
+                    android:layout_marginLeft="@dimen/quest_mgleft"
+                    android:layout_marginRight="@dimen/quest_mgleft"
+                    android:layout_marginTop="@dimen/instruct_mgleft"
+                    android:layout_weight="1"
+                    android:background="@color/pink"
+                    android:onClick="answer8"
+                    android:text="@string/submit"
+                    android:textColor="@color/violet" />
+
+                <Button
+                    android:id="@+id/q9"
+                    android:layout_width="@dimen/btnwidth"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/quest_mgleft"
+                    android:layout_marginRight="@dimen/quest_mgleft"
+                    android:layout_marginTop="@dimen/instruct_mgleft"
+                    android:layout_weight="1"
+                    android:background="@drawable/rnd"
+                    android:onClick="page9"
+                    android:text="@string/next" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/appreciate"
+            android:layout_width="@dimen/corneradius"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/quest_mgleft"
+            android:layout_marginTop="@dimen/check_lanmgtop"
+            android:src="@drawable/claps1"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/negate"
+            android:layout_width="@dimen/corneradius"
+            android:layout_height="@dimen/corneradius"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/quest_mgleft"
+            android:layout_marginTop="@dimen/check_lanmgtop"
+            android:src="@drawable/wrong"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+</ScrollView>
