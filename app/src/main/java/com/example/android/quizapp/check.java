@@ -40,10 +40,11 @@ public class check extends AppCompatActivity {
     public void displaymessage(int score) {
         TextView mess = findViewById(R.id.res);
         mess.setText(getString(R.string.scorevalue) + score);
-
+        Toast.makeText(getApplicationContext(),(getString(R.string.scorevalue) + score), Toast.LENGTH_SHORT).show();
+        
         if (score <= 4) {
             TextView remark = findViewById(R.id.rem);
-            remark.setText(R.string.rem1);
+            remark.setText(R.string.rem1);1
         }
         else if ((score > 4) && (score <= 8)) {
             TextView remark = findViewById(R.id.rem);
